@@ -21,7 +21,7 @@ public class NetworkUtils {
         // finally block.
         HttpURLConnection urlConnection = null;
         BufferedReader reader = null;
-        String worldClockJSONString = null;
+        String worldClockJSONString = "";
 
         try {
             URL requestURL = new URL(BASE_URL + queryString);
@@ -76,7 +76,7 @@ public class NetworkUtils {
                 }
             }
         }
-        
+
         return worldClockJSONString;
     }
 }
